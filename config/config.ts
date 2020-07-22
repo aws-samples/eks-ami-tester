@@ -8,6 +8,7 @@ export interface ProjectConfig {
   "eksadmin_user_name" : string,
   "office_eks_api_cidr": string,
   "default_worker_count" : number,
+  "eks_version" : string,
   "default_ami_name" : string,
   "test_ami_name" : string,
   "pipeline_approval_email": string,

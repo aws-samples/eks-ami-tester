@@ -59,7 +59,7 @@ export class EksClusterCdkStack extends cdk.Stack {
       outputMastersRoleArn: true,
       role: clusterServiceRole,
       securityGroup: eksClusterSecurityGroup,
-      version: "1.15",
+      version: eks.KubernetesVersion.of(config.eks_version),
       vpc: eksClusterVpc,
       vpcSubnets: [
         { subnetType: ec2.SubnetType.PUBLIC, onePerAz: true },
