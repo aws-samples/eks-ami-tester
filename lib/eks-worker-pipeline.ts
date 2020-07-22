@@ -44,8 +44,8 @@ export class EksWorkerUpdatePipelineStack extends cdk.Stack {
           pre_build: {
             commands: [
                 'echo "Install Dependencies"',
-                'npm install -g typescript@2.7.2',
-                'npm install -g aws-cdk@1.33.0',
+                'npm install -g typescript',
+                'npm install -g aws-cdk',
                 'curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.15.10/2020-02-22/bin/linux/amd64/kubectl',
                 'chmod +x ./kubectl',
                 'mv ./kubectl /usr/local/bin/kubectl',
