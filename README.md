@@ -1,4 +1,4 @@
- ## Automating Amazon EKS cluster testing with newly baked custom AMIs 
+ ## Automating Amazon EKS cluster testing with custom machine images
 In this solution, we will use [AWS CDK](https://aws.amazon.com/cdk/) to provision an EKS cluster with self-managed worker nodes. We will generate an EKS cluster with a blue worker node group. Then, generate a test node group (with taints) to do preliminary validation of the new AMI. If all the tests pass, we will deploy a green worker node group with the new AMI and gracefully move workloads over. This solution also provides an [AWS CodePipeline](https://aws.amazon.com/codepipeline/) pipeline, which automates this process. 
 Please note that in this solution, we are not considering [PodDisruptionBudget](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) objects (PDB). If a PDB is configured for a deployment, Kubernetes will prevent nodes from being drained.
 
