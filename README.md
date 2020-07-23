@@ -29,7 +29,7 @@ Before starting you need the following:
 2.	Clone the git repo
 ```
 git clone https://github.com/aws-samples/eks-ami-tester.git
-cd eks-amitest
+cd eks-ami-tester
 ```
 3.	Update the CDK project configuration `config/project-config.json` according to your environment:
 ```
@@ -138,7 +138,7 @@ $ cdk deploy AmiTestEksClusterWorkersBlue -c version=Blue -c desiredCount=0
 ```
 
 ### Automated solution
-As part of the prerequisites, you also deployed a pipeline, AmiTestEksWorkerPipeline. This pipeline automates the steps you just performed. The pipeline is triggered by any changes pushed to the config file in the master branch.
+As part of the prerequisites, you also deployed a stack called AmiTestEksWorkerPipeline. This stack generates a new [AWS CodeCommit](https://aws.amazon.com/codecommit/) repository along with the pipeline which automates the manual steps described above. Once you navigate to CodeCommit you will see a new repository called EksUpdatePipelineRepo. Push the contents of `eks-ami-tester` to this repository. This will trigger `EKSUpdatePipeline` in CodePipeline.
 
 ![](images/pipeline.png)
 
