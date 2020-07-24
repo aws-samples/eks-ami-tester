@@ -1,0 +1,6 @@
+{
+  "app": "npx ts-node bin/eks-cluster-cdk.ts",
+  "context": {
+    "test": "false"
+  }
+}

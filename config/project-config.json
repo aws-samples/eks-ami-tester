@@ -1,0 +1,14 @@
+{
+  "account_id": "XXXXXXXXXXXX",
+  "region": "ca-central-1",
+  "vpc_id" : "vpc-XXXXXXXXXXXX",
+  "cluster_name": "AMI-Test",
+  "eksadmin_user_name" : "",
+  "office_eks_api_cidr" : "",
+  "default_worker_count" : 1,
+  "eks_version": "1.17",
+  "default_ami_name" : "amazon-eks-node-1.15-v20200312",
+  "test_ami_name" : "amazon-eks-node-1.15-v20200406",
+  "pipeline_approval_email": "XXXXXXXXXXXX",
+  "next_version" : "Green"
+}
