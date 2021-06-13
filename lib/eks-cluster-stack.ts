@@ -52,7 +52,6 @@ export class EksClusterCdkStack extends cdk.Stack {
     const eksCluster = new eks.Cluster(this, 'EksCluster', {
       clusterName: config.cluster_name,
       defaultCapacity: 0,
-      kubectlEnabled: true,
       mastersRole: clusterAdminRole,
       outputClusterName: true,
       outputConfigCommand: true,
