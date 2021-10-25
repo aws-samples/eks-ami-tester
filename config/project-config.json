@@ -1,14 +1,14 @@
 {
-  "account_id": "XXXXXXXXXXXX",
-  "region": "ca-central-1",
-  "vpc_id" : "vpc-XXXXXXXXXXXX",
+  "account_id": "850854751783",
+  "region": "us-east-1",
+  "vpc_id" : "vpc-0d12fab825082ae3b",
   "cluster_name": "AMI-Test",
-  "eksadmin_user_name" : "",
-  "office_eks_api_cidr" : "",
+  "eksadmin_user_name" : "srijit",
+  "office_eks_api_cidr" : "0.0.0.0/32",
   "default_worker_count" : 1,
-  "eks_version": "1.17",
-  "default_ami_name" : "amazon-eks-node-1.15-v20200312",
-  "test_ami_name" : "amazon-eks-node-1.15-v20200406",
-  "pipeline_approval_email": "XXXXXXXXXXXX",
+  "eks_version": "1.20",
+  "default_ami_name" : "amazon-eks-node-1.20-v20210526",
+  "test_ami_name" : "amazon-eks-node-1.20-v20210526",
+  "pipeline_approval_email": "srijit@amazon.com",
   "next_version" : "Green"
 }
