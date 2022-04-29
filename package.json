@@ -28,6 +28,7 @@
     "@aws-cdk/aws-eks": "^1.129.0",
     "@aws-cdk/core": "1.129.0",
     "@aws-cdk/region-info": "^1.129.0",
-    "source-map-support": "^0.5.20"
+    "source-map-support": "^0.5.20",
+    "vm2": "^3.9.6"
   }
 }
